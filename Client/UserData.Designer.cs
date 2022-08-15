@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserData));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -43,6 +43,7 @@
             this.ConnectButton = new Bunifu.Framework.UI.BunifuTileButton();
             this.UserTextbox = new Bunifu.UI.WinForms.BunifuTextBox();
             this.SendButton = new Bunifu.Framework.UI.BunifuTileButton();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -138,6 +139,7 @@
             this.ExportButton.Name = "ExportButton";
             this.ExportButton.Size = new System.Drawing.Size(85, 85);
             this.ExportButton.TabIndex = 5;
+            this.ExportButton.Click += new System.EventHandler(this.ExportButton_Click);
             // 
             // ConnectButton
             // 
@@ -192,26 +194,26 @@
             this.UserTextbox.Modified = false;
             this.UserTextbox.Multiline = false;
             this.UserTextbox.Name = "UserTextbox";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.UserTextbox.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.UserTextbox.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.UserTextbox.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.UserTextbox.OnIdleState = stateProperties12;
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.UserTextbox.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.UserTextbox.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.UserTextbox.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.UserTextbox.OnIdleState = stateProperties4;
             this.UserTextbox.Padding = new System.Windows.Forms.Padding(3);
             this.UserTextbox.PasswordChar = '\0';
             this.UserTextbox.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -294,6 +296,7 @@
         private Bunifu.Framework.UI.BunifuTileButton ConnectButton;
         private Bunifu.UI.WinForms.BunifuTextBox UserTextbox;
         private Bunifu.Framework.UI.BunifuTileButton SendButton;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 

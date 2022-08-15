@@ -76,7 +76,7 @@ namespace ISP_ChatClient
                     richTextBox1.Clear();
                     UserClass.userName = UserTextbox.Text;
                     UserTextbox.Clear();
-                    UserTextbox.PlaceholderText = "Zdravo! Kako si?";
+                    UserTextbox.PlaceholderText = "Pozdrav! Kako si?";
                     TextboxLabel.Text = "Vaša poruka:";
                     richTextBox1.ReadOnly = false;
                     Thread thread_klijenta = new Thread(primiPoruku);
@@ -99,6 +99,15 @@ namespace ISP_ChatClient
             byte[] outStream = System.Text.Encoding.ASCII.GetBytes(UserTextbox.Text + "$");
             stream_servera.Write(outStream, 0, outStream.Length);
             stream_servera.Flush();
+        }
+
+        private void ExportButton_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.Filter = ".rtf | *.rtf";
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.SaveFile(saveFileDialog1.FileName);
+            }
         }
     }
 }
