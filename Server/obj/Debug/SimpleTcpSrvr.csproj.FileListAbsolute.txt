@@ -1,8 +1,0 @@
-C:\Users\andri\source\Repos\SimpleTcpSrvr\bin\Debug\SimpleTcpSrvr.exe.config
-C:\Users\andri\source\Repos\SimpleTcpSrvr\bin\Debug\SimpleTcpSrvr.exe
-C:\Users\andri\source\Repos\SimpleTcpSrvr\bin\Debug\SimpleTcpSrvr.pdb
-C:\Users\andri\source\Repos\SimpleTcpSrvr\obj\Debug\SimpleTcpSrvr.csproj.AssemblyReference.cache
-C:\Users\andri\source\Repos\SimpleTcpSrvr\obj\Debug\SimpleTcpSrvr.csproj.SuggestedBindingRedirects.cache
-C:\Users\andri\source\Repos\SimpleTcpSrvr\obj\Debug\SimpleTcpSrvr.csproj.CoreCompileInputs.cache
-C:\Users\andri\source\Repos\SimpleTcpSrvr\obj\Debug\SimpleTcpSrvr.exe
-C:\Users\andri\source\Repos\SimpleTcpSrvr\obj\Debug\SimpleTcpSrvr.pdb

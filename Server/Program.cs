@@ -1,62 +1,125 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Net;
+using System.Threading;
 using System.Net.Sockets;
+using System.Text;
 using System.Collections;
 
-namespace ISP_RAC1_ChatClient_SRV
+namespace ISP_ChatServer
 {
     class Program
     {
+        public static Hashtable clientsList = new Hashtable();
+
         static void Main(string[] args)
         {
-            Console.OutputEncoding = Encoding.UTF8;
-            int prijem;
-            string ime_korisnika;
-            byte[] podaci = new byte[1024];
-            try
+            TcpListener serverSocket = new TcpListener(8888);
+            TcpClient clientSocket = default(TcpClient);
+            int counter = 0;
+
+            serverSocket.Start();
+            Console.WriteLine("ISP ChatServer pokrenut.");
+            counter = 0;
+            while ((true))
             {
-                Console.Write("Korisničko ime: ");
-                ime_korisnika = Console.ReadLine();
-                Console.Write("OK!\n\nPovezivanje...");
+                counter += 1;
+                clientSocket = serverSocket.AcceptTcpClient();
+
+                byte[] bytesFrom = new byte[10000000];
+                string dataFromClient = null;
+
+                try
+                {
+                    NetworkStream networkStream = clientSocket.GetStream();
+                    networkStream.Read(bytesFrom, 0, (int)clientSocket.ReceiveBufferSize);
+                    dataFromClient = System.Text.Encoding.ASCII.GetString(bytesFrom);
+                    dataFromClient = dataFromClient.Substring(0, dataFromClient.IndexOf("$"));
+                    clientsList.Add(dataFromClient, clientSocket);
+                    broadcast(dataFromClient + " je online. ", dataFromClient, false);
+                    Console.WriteLine(dataFromClient + " je online. ");
+                    handleClinet client = new handleClinet();
+                    client.startClient(clientSocket, dataFromClient, clientsList);
+                }
+                catch (Exception ex)
+                {
+                    Console.Write(ex.Message);
+                }
             }
-            catch
-            {
-                Console.Clear();
-                Console.Write("Molimo proverite validnost ulaza.\n\nPritisnite bilo koji taster za napuštanje programa.");
-                return;
-            }
-            IPEndPoint ipep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8888);
-            Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            socket.Bind(ipep);
-            socket.Listen(10);
-            Console.WriteLine("Server pokrenut.\n\nČekanje na klijentsku konekciju...");
-            Socket client = socket.Accept();
-            IPEndPoint clientep = (IPEndPoint)client.RemoteEndPoint;
-            Console.Clear();
-            Console.WriteLine("Veza uspostavljena sa {0} na portu {1}.", clientep.Address, clientep.Port);
-            string motd = "Dobrodošli na Petnički chat client";
-            podaci = Encoding.UTF8.GetBytes(motd);
-            client.Send(podaci, podaci.Length, SocketFlags.None);
-            string unos;
-            while (true)
-            {
-                podaci = new byte[1024];
-                prijem = client.Receive(podaci);
-                if (prijem == 0)
-                    break;
-                Console.WriteLine("\n" + Encoding.UTF8.GetString(podaci, 0, prijem));
-                Console.Write("\n" + ime_korisnika + " (Vi): ");
-                unos = Console.ReadLine();
-                client.Send(Encoding.UTF8.GetBytes(ime_korisnika + ": " + unos));
-            }
-            Console.WriteLine("Veza sa {0} okončana.", clientep.Address);
-            client.Close();
-            socket.Close();
+
+            clientSocket.Close();
+            serverSocket.Stop();
+            Console.WriteLine("exit");
             Console.ReadLine();
         }
-    }
-}
+
+        public static void broadcast(string msg, string uName, bool flag)
+        {
+            foreach (DictionaryEntry Item in clientsList)
+            {
+                TcpClient broadcastSocket;
+                broadcastSocket = (TcpClient)Item.Value;
+                NetworkStream broadcastStream = broadcastSocket.GetStream();
+                Byte[] broadcastBytes = null;
+
+                if (flag == true)
+                {
+                    broadcastBytes = Encoding.ASCII.GetBytes(uName + ": " + msg);
+                }
+                else
+                {
+                    broadcastBytes = Encoding.ASCII.GetBytes(msg);
+                }
+
+                broadcastStream.Write(broadcastBytes, 0, broadcastBytes.Length);
+                broadcastStream.Flush();
+            }
+        }  //end broadcast function
+    }//end Main class
+
+
+    public class handleClinet
+    {
+        TcpClient clientSocket;
+        string clNo;
+        Hashtable clientsList;
+
+        public void startClient(TcpClient inClientSocket, string clineNo, Hashtable cList)
+        {
+            this.clientSocket = inClientSocket;
+            this.clNo = clineNo;
+            this.clientsList = cList;
+            Thread ctThread = new Thread(doChat);
+            ctThread.Start();
+        }
+
+        private void doChat()
+        {
+            int requestCount = 0;
+            byte[] bytesFrom = new byte[1000000];
+            string dataFromClient = null;
+            Byte[] sendBytes = null;
+            string serverResponse = null;
+            string rCount = null;
+            requestCount = 0;
+
+            while ((true))
+            {
+                try
+                {
+                    requestCount = requestCount + 1;
+                    NetworkStream networkStream = clientSocket.GetStream();
+                    networkStream.Read(bytesFrom, 0, (int)clientSocket.ReceiveBufferSize);
+                    dataFromClient = System.Text.Encoding.ASCII.GetString(bytesFrom);
+                    dataFromClient = dataFromClient.Substring(0, dataFromClient.IndexOf("$"));
+                    Console.WriteLine("Klijent - " + clNo + " : " + dataFromClient);
+                    rCount = Convert.ToString(requestCount);
+
+                    Program.broadcast(dataFromClient, clNo, true);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
+            }//end while
+        }//end doChat
+    } //end class handleClinet
+}//end namespace

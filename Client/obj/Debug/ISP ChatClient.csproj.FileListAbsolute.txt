@@ -1,0 +1,16 @@
+C:\Users\andri\source\Repos\ISP ChatClient\bin\Debug\ISP ChatClient.exe.config
+C:\Users\andri\source\Repos\ISP ChatClient\bin\Debug\ISP ChatClient.exe
+C:\Users\andri\source\Repos\ISP ChatClient\bin\Debug\ISP ChatClient.pdb
+C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.csproj.AssemblyReference.cache
+C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.csproj.SuggestedBindingRedirects.cache
+C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP_ChatClient.Properties.Resources.resources
+C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP_ChatClient.UserData.resources
+C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.csproj.GenerateResource.cache
+C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.csproj.CoreCompileInputs.cache
+C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.exe
+C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.pdb
+C:\Users\andri\source\Repos\ISP ChatClient\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\andri\source\Repos\ISP ChatClient\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\andri\source\Repos\ISP ChatClient\bin\Debug\Bunifu.Licensing.dll
+C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.exe.licenses
+C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.csproj.CopyComplete

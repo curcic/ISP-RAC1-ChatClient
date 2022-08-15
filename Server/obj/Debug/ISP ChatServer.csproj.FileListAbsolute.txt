@@ -1,0 +1,8 @@
+C:\Users\andri\source\Repos\ISP ChatServer\bin\Debug\ISP ChatServer.exe.config
+C:\Users\andri\source\Repos\ISP ChatServer\bin\Debug\ISP ChatServer.exe
+C:\Users\andri\source\Repos\ISP ChatServer\bin\Debug\ISP ChatServer.pdb
+C:\Users\andri\source\Repos\ISP ChatServer\obj\Debug\ISP ChatServer.csproj.AssemblyReference.cache
+C:\Users\andri\source\Repos\ISP ChatServer\obj\Debug\ISP ChatServer.csproj.SuggestedBindingRedirects.cache
+C:\Users\andri\source\Repos\ISP ChatServer\obj\Debug\ISP ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\andri\source\Repos\ISP ChatServer\obj\Debug\ISP ChatServer.exe
+C:\Users\andri\source\Repos\ISP ChatServer\obj\Debug\ISP ChatServer.pdb
