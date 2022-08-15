@@ -1,0 +1,15 @@
+C:\Users\nina\source\repos\client1\client1\bin\Debug\net6.0\client1.exe
+C:\Users\nina\source\repos\client1\client1\bin\Debug\net6.0\client1.deps.json
+C:\Users\nina\source\repos\client1\client1\bin\Debug\net6.0\client1.runtimeconfig.json
+C:\Users\nina\source\repos\client1\client1\bin\Debug\net6.0\client1.dll
+C:\Users\nina\source\repos\client1\client1\bin\Debug\net6.0\client1.pdb
+C:\Users\nina\source\repos\client1\client1\obj\Debug\net6.0\client1.csproj.AssemblyReference.cache
+C:\Users\nina\source\repos\client1\client1\obj\Debug\net6.0\client1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nina\source\repos\client1\client1\obj\Debug\net6.0\client1.AssemblyInfoInputs.cache
+C:\Users\nina\source\repos\client1\client1\obj\Debug\net6.0\client1.AssemblyInfo.cs
+C:\Users\nina\source\repos\client1\client1\obj\Debug\net6.0\client1.csproj.CoreCompileInputs.cache
+C:\Users\nina\source\repos\client1\client1\obj\Debug\net6.0\client1.dll
+C:\Users\nina\source\repos\client1\client1\obj\Debug\net6.0\refint\client1.dll
+C:\Users\nina\source\repos\client1\client1\obj\Debug\net6.0\client1.pdb
+C:\Users\nina\source\repos\client1\client1\obj\Debug\net6.0\client1.genruntimeconfig.cache
+C:\Users\nina\source\repos\client1\client1\obj\Debug\net6.0\ref\client1.dll
