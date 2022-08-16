@@ -60,6 +60,7 @@ C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.cspro
 C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.CopyComplete
 C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.exe
 C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.pdb
+<<<<<<< HEAD
 C:\Users\andri\Desktop\Chat\Client\bin\Debug\ISP ChatClient.exe.config
 C:\Users\andri\Desktop\Chat\Client\bin\Debug\ISP ChatClient.exe
 C:\Users\andri\Desktop\Chat\Client\bin\Debug\ISP ChatClient.pdb
@@ -73,3 +74,18 @@ C:\Users\andri\Desktop\Chat\Client\obj\Debug\ISP ChatClient.csproj.CoreCompileIn
 C:\Users\andri\Desktop\Chat\Client\obj\Debug\ISP ChatClient.csproj.CopyComplete
 C:\Users\andri\Desktop\Chat\Client\obj\Debug\ISP ChatClient.exe
 C:\Users\andri\Desktop\Chat\Client\obj\Debug\ISP ChatClient.pdb
+=======
+C:\Users\nina\Source\Repos\ISP-ChatClient\Client\bin\Debug\ISP ChatClient.exe.config
+C:\Users\nina\Source\Repos\ISP-ChatClient\Client\bin\Debug\ISP ChatClient.exe
+C:\Users\nina\Source\Repos\ISP-ChatClient\Client\bin\Debug\ISP ChatClient.pdb
+C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.AssemblyReference.cache
+C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.SuggestedBindingRedirects.cache
+C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP_ChatClient.Properties.Resources.resources
+C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP_ChatClient.UserData.resources
+C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.GenerateResource.cache
+C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.exe.licenses
+C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.CoreCompileInputs.cache
+C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.CopyComplete
+C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.exe
+C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.pdb
+>>>>>>> 695c4d40b415a184bcdc75100a85bcc1af9abb0f
