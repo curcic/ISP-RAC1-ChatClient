@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ISP_ChatClient
 {
@@ -18,7 +11,6 @@ namespace ISP_ChatClient
         TcpClient socket_klijenta = new TcpClient();
         NetworkStream stream_servera = default(NetworkStream);
         string ocitaj_podatke = null;
-
         public UserData()
         {
             InitializeComponent();
@@ -37,12 +29,12 @@ namespace ISP_ChatClient
             while (true)
             {
                 stream_servera = socket_klijenta.GetStream();
-                int buffSize = 0;
-                byte[] inStream = new byte[10000000];
-                buffSize = socket_klijenta.ReceiveBufferSize;
-                stream_servera.Read(inStream, 0, buffSize);
-                string returndata = System.Text.Encoding.ASCII.GetString(inStream);
-                ocitaj_podatke = "" + returndata;
+                int velicina_buffera = 0;
+                byte[] ulazni_stream = new byte[10000000];
+                velicina_buffera = socket_klijenta.ReceiveBufferSize;
+                stream_servera.Read(ulazni_stream, 0, velicina_buffera);
+                string izlazni_podaci = Encoding.ASCII.GetString(ulazni_stream);
+                ocitaj_podatke = "" + izlazni_podaci;
                 Poruka();
             }
         }
@@ -65,7 +57,7 @@ namespace ISP_ChatClient
                 Poruka();
                 try
                 {
-                    socket_klijenta.Connect("192.168.245.137", 8888);
+                    socket_klijenta.Connect("10.51.0.67", 8888);
                     stream_servera = socket_klijenta.GetStream();
                     byte[] izlazni_stream = Encoding.ASCII.GetBytes(UserTextbox.Text + "$");
                     stream_servera.Write(izlazni_stream, 0, izlazni_stream.Length);

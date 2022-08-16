@@ -4,15 +4,28 @@ using System.Net.Sockets;
 using System.Text;
 using System.Collections;
 using System.Net;
+using System.Security.Cryptography;
 
 namespace ISP_ChatServer
 {
     class Program
     {
         public static Hashtable lista_klijenata = new Hashtable();
+
+        public static string HashData(string data)
+        {
+            SHA256 hasher = SHA256Managed.Create();
+            byte[] hashedData = hasher.ComputeHash(Encoding.Unicode.GetBytes(data));
+            StringBuilder sb = new StringBuilder(hashedData.Length * 2);
+            foreach (byte b in hashedData)
+            {
+                sb.AppendFormat("{0:x2}", b);
+            }
+            return sb.ToString();
+        }
         static void Main(string[] args)
         {
-            var localhost = IPAddress.Parse("192.168.245.137");
+            var localhost = IPAddress.Parse("10.51.0.67");
             TcpListener socket_servera = new TcpListener(localhost, 8888);
             TcpClient socket_klijenta = default(TcpClient);
             int i = 0;
