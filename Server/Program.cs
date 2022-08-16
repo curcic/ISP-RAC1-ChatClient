@@ -18,7 +18,7 @@ namespace ISP_ChatServer
             int i = 0;
             socket_servera.Start();
             Console.WriteLine("ISP ChatServer pokrenut.");
-            while ((true))
+            while (true)
             {
                 i += 1;
                 socket_klijenta = socket_servera.AcceptTcpClient();
