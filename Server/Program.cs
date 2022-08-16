@@ -26,12 +26,13 @@ namespace ISP_ChatServer
                 string podaci_klijenta = null;
                 try
                 {
+                    String timeStamp = GetTimestamp(DateTime.Now);
                     NetworkStream stream_mreze = socket_klijenta.GetStream();
                     stream_mreze.Read(bajtovi, 0, (int)socket_klijenta.ReceiveBufferSize);
                     podaci_klijenta = System.Text.Encoding.ASCII.GetString(bajtovi);
                     podaci_klijenta = podaci_klijenta.Substring(0, podaci_klijenta.IndexOf("$"));
                     lista_klijenata.Add(podaci_klijenta, socket_klijenta);
-                    Objava(podaci_klijenta + " je online. ", podaci_klijenta, false);
+                    Objava("[" + timeStamp + "] " + podaci_klijenta + " je online. ", podaci_klijenta, false);
                     Console.WriteLine(podaci_klijenta + " je online. ");
                     Klijent client = new Klijent();
                     client.pokreni_klijenta(socket_klijenta, podaci_klijenta, lista_klijenata);
@@ -46,17 +47,22 @@ namespace ISP_ChatServer
             Console.WriteLine("exit");
             Console.ReadLine();
         }
+        public static String GetTimestamp(DateTime value)
+        {
+            return value.ToString("yyyy.MM.dd_HH-mm-ss");
+        }
         public static void Objava(string poruka, string korisnicko_ime, bool oznaka)
         {
             foreach (DictionaryEntry Item in lista_klijenata)
             {
+                String timeStamp = GetTimestamp(DateTime.Now);
                 TcpClient socket_objave;
                 socket_objave = (TcpClient)Item.Value;
                 NetworkStream stream_objave = socket_objave.GetStream();
                 Byte[] bajtovi = null;
                 if (oznaka == true)
                 {
-                    bajtovi = Encoding.ASCII.GetBytes(korisnicko_ime + ": " + poruka);
+                    bajtovi = Encoding.ASCII.GetBytes("[" + timeStamp + "] " + korisnicko_ime + ": " + poruka);
                 }
                 else
                 {

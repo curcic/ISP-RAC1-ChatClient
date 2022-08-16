@@ -14,3 +14,11 @@ C:\Users\slusk\Source\Repos\ISP-ChatClient\Server\obj\Debug\ISP ChatServer.cspro
 C:\Users\slusk\Source\Repos\ISP-ChatClient\Server\obj\Debug\ISP ChatServer.csproj.CoreCompileInputs.cache
 C:\Users\slusk\Source\Repos\ISP-ChatClient\Server\obj\Debug\ISP ChatServer.exe
 C:\Users\slusk\Source\Repos\ISP-ChatClient\Server\obj\Debug\ISP ChatServer.pdb
+C:\Users\andri\Desktop\Chat\Server\bin\Debug\ISP ChatServer.exe.config
+C:\Users\andri\Desktop\Chat\Server\bin\Debug\ISP ChatServer.exe
+C:\Users\andri\Desktop\Chat\Server\bin\Debug\ISP ChatServer.pdb
+C:\Users\andri\Desktop\Chat\Server\obj\Debug\ISP ChatServer.csproj.AssemblyReference.cache
+C:\Users\andri\Desktop\Chat\Server\obj\Debug\ISP ChatServer.csproj.SuggestedBindingRedirects.cache
+C:\Users\andri\Desktop\Chat\Server\obj\Debug\ISP ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\andri\Desktop\Chat\Server\obj\Debug\ISP ChatServer.exe
+C:\Users\andri\Desktop\Chat\Server\obj\Debug\ISP ChatServer.pdb

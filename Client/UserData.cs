@@ -23,6 +23,10 @@ namespace ISP_ChatClient
         {
             InitializeComponent();
         }
+        public static String GetTimestamp(DateTime value)
+        {
+            return value.ToString("yyyy-MM-dd-HH-mm-ss");
+        }
         private void Poruka()
         {
             if (this.InvokeRequired)
@@ -97,8 +101,10 @@ namespace ISP_ChatClient
         private void SendButton_Click(object sender, EventArgs e)
         {
             byte[] outStream = System.Text.Encoding.ASCII.GetBytes(UserTextbox.Text + "$");
+            UserTextbox.Clear();
             stream_servera.Write(outStream, 0, outStream.Length);
             stream_servera.Flush();
+            UserTextbox.Focus();
         }
 
         private void ExportButton_Click(object sender, EventArgs e)
