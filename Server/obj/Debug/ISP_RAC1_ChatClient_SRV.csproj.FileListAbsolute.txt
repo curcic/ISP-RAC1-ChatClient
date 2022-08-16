@@ -1,8 +1,0 @@
-C:\Users\andri\source\Repos\SimpleTcpSrvr\bin\Debug\ISP_RAC1_ChatClient_SRV.exe.config
-C:\Users\andri\source\Repos\SimpleTcpSrvr\bin\Debug\ISP_RAC1_ChatClient_SRV.exe
-C:\Users\andri\source\Repos\SimpleTcpSrvr\bin\Debug\ISP_RAC1_ChatClient_SRV.pdb
-C:\Users\andri\source\Repos\SimpleTcpSrvr\obj\Debug\ISP_RAC1_ChatClient_SRV.csproj.AssemblyReference.cache
-C:\Users\andri\source\Repos\SimpleTcpSrvr\obj\Debug\ISP_RAC1_ChatClient_SRV.csproj.SuggestedBindingRedirects.cache
-C:\Users\andri\source\Repos\SimpleTcpSrvr\obj\Debug\ISP_RAC1_ChatClient_SRV.csproj.CoreCompileInputs.cache
-C:\Users\andri\source\Repos\SimpleTcpSrvr\obj\Debug\ISP_RAC1_ChatClient_SRV.exe
-C:\Users\andri\source\Repos\SimpleTcpSrvr\obj\Debug\ISP_RAC1_ChatClient_SRV.pdb

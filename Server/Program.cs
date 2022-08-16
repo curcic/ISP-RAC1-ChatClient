@@ -1,62 +1,111 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Net;
+using System.Threading;
 using System.Net.Sockets;
+using System.Text;
 using System.Collections;
+using System.Net;
 
-namespace ISP_RAC1_ChatClient_SRV
+namespace ISP_ChatServer
 {
     class Program
     {
+        public static Hashtable lista_klijenata = new Hashtable();
         static void Main(string[] args)
         {
-            Console.OutputEncoding = Encoding.UTF8;
-            int prijem;
-            string ime_korisnika;
-            byte[] podaci = new byte[1024];
-            try
+            var localhost = IPAddress.Parse("127.0.0.1");
+            TcpListener socket_servera = new TcpListener(localhost, 8888);
+            TcpClient socket_klijenta = default(TcpClient);
+            int i = 0;
+            socket_servera.Start();
+            Console.WriteLine("ISP ChatServer pokrenut.");
+            while ((true))
             {
-                Console.Write("Korisničko ime: ");
-                ime_korisnika = Console.ReadLine();
-                Console.Write("OK!\n\nPovezivanje...");
+                i += 1;
+                socket_klijenta = socket_servera.AcceptTcpClient();
+                byte[] bajtovi = new byte[10000000];
+                string podaci_klijenta = null;
+                try
+                {
+                    NetworkStream stream_mreze = socket_klijenta.GetStream();
+                    stream_mreze.Read(bajtovi, 0, (int)socket_klijenta.ReceiveBufferSize);
+                    podaci_klijenta = System.Text.Encoding.ASCII.GetString(bajtovi);
+                    podaci_klijenta = podaci_klijenta.Substring(0, podaci_klijenta.IndexOf("$"));
+                    lista_klijenata.Add(podaci_klijenta, socket_klijenta);
+                    Objava(podaci_klijenta + " je online. ", podaci_klijenta, false);
+                    Console.WriteLine(podaci_klijenta + " je online. ");
+                    Klijent client = new Klijent();
+                    client.pokreni_klijenta(socket_klijenta, podaci_klijenta, lista_klijenata);
+                }
+                catch (Exception ex)
+                {
+                    Console.Write(ex.Message);
+                }
             }
-            catch
+            socket_klijenta.Close();
+            socket_servera.Stop();
+            Console.WriteLine("exit");
+            Console.ReadLine();
+        }
+        public static void Objava(string poruka, string korisnicko_ime, bool oznaka)
+        {
+            foreach (DictionaryEntry Item in lista_klijenata)
             {
-                Console.Clear();
-                Console.Write("Molimo proverite validnost ulaza.\n\nPritisnite bilo koji taster za napuštanje programa.");
-                return;
+                TcpClient socket_objave;
+                socket_objave = (TcpClient)Item.Value;
+                NetworkStream stream_objave = socket_objave.GetStream();
+                Byte[] bajtovi = null;
+                if (oznaka == true)
+                {
+                    bajtovi = Encoding.ASCII.GetBytes(korisnicko_ime + ": " + poruka);
+                }
+                else
+                {
+                    bajtovi = Encoding.ASCII.GetBytes(poruka);
+                }
+                stream_objave.Write(bajtovi, 0, bajtovi.Length);
+                stream_objave.Flush();
             }
-            IPEndPoint ipep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8888);
-            Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            socket.Bind(ipep);
-            socket.Listen(10);
-            Console.WriteLine("Server pokrenut.\n\nČekanje na klijentsku konekciju...");
-            Socket client = socket.Accept();
-            IPEndPoint clientep = (IPEndPoint)client.RemoteEndPoint;
-            Console.Clear();
-            Console.WriteLine("Veza uspostavljena sa {0} na portu {1}.", clientep.Address, clientep.Port);
-            string motd = "Dobrodošli na Petnički chat client";
-            podaci = Encoding.UTF8.GetBytes(motd);
-            client.Send(podaci, podaci.Length, SocketFlags.None);
-            string unos;
+        }
+    }
+    public class Klijent
+    {
+        TcpClient socket_klijenta;
+        string broj_klijenta;
+        Hashtable lista_klijenata;
+        public void pokreni_klijenta(TcpClient ulazni_socket, string broj, Hashtable lista)
+        {
+            this.socket_klijenta = ulazni_socket;
+            this.broj_klijenta = broj;
+            this.lista_klijenata = lista;
+            Thread thread_klijenta = new Thread(Chat);
+            thread_klijenta.Start();
+        }
+        private void Chat()
+        {
+            int broj_zahteva = 0;
+            byte[] bajtovi_od = new byte[1000000];
+            string podaci_klijenta = null;
+            Byte[] bajtovi_za = null;
+            string odgovor_servera = null;
+            string broj_z_s = null;
             while (true)
             {
-                podaci = new byte[1024];
-                prijem = client.Receive(podaci);
-                if (prijem == 0)
-                    break;
-                Console.WriteLine("\n" + Encoding.UTF8.GetString(podaci, 0, prijem));
-                Console.Write("\n" + ime_korisnika + " (Vi): ");
-                unos = Console.ReadLine();
-                client.Send(Encoding.UTF8.GetBytes(ime_korisnika + ": " + unos));
+                try
+                {
+                    broj_zahteva += 1;
+                    NetworkStream stream_mreze = socket_klijenta.GetStream();
+                    stream_mreze.Read(bajtovi_od, 0, (int)socket_klijenta.ReceiveBufferSize);
+                    podaci_klijenta = Encoding.ASCII.GetString(bajtovi_od);
+                    podaci_klijenta = podaci_klijenta.Substring(0, podaci_klijenta.IndexOf("$"));
+                    Console.WriteLine("Klijent - " + broj_klijenta + " : " + podaci_klijenta);
+                    broj_z_s = Convert.ToString(broj_zahteva);
+                    Program.Objava(podaci_klijenta, broj_klijenta, true);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
             }
-            Console.WriteLine("Veza sa {0} okončana.", clientep.Address);
-            client.Close();
-            socket.Close();
-            Console.ReadLine();
         }
     }
 }
