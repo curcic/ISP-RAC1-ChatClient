@@ -12,7 +12,7 @@ namespace ISP_ChatServer
         public static Hashtable lista_klijenata = new Hashtable();
         static void Main(string[] args)
         {
-            var localhost = IPAddress.Parse("127.0.0.1");
+            var localhost = IPAddress.Parse("192.168.245.137");
             TcpListener socket_servera = new TcpListener(localhost, 8888);
             TcpClient socket_klijenta = default(TcpClient);
             int i = 0;

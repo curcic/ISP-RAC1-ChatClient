@@ -1,69 +1,39 @@
-C:\Users\andri\source\Repos\ISP ChatClient\bin\Debug\ISP ChatClient.exe.config
-C:\Users\andri\source\Repos\ISP ChatClient\bin\Debug\ISP ChatClient.exe
-C:\Users\andri\source\Repos\ISP ChatClient\bin\Debug\ISP ChatClient.pdb
-C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.csproj.AssemblyReference.cache
-C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.csproj.SuggestedBindingRedirects.cache
-C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP_ChatClient.Properties.Resources.resources
-C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP_ChatClient.UserData.resources
-C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.csproj.GenerateResource.cache
-C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.csproj.CoreCompileInputs.cache
-C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.exe
-C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.pdb
-C:\Users\andri\source\Repos\ISP ChatClient\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
-C:\Users\andri\source\Repos\ISP ChatClient\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
-C:\Users\andri\source\Repos\ISP ChatClient\bin\Debug\Bunifu.Licensing.dll
-C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.exe.licenses
-C:\Users\andri\source\Repos\ISP ChatClient\obj\Debug\ISP ChatClient.csproj.CopyComplete
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\ISP ChatClient.exe.config
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\ISP ChatClient.exe
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\ISP ChatClient.pdb
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.Licensing.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.AssemblyReference.cache
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.SuggestedBindingRedirects.cache
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP_ChatClient.Properties.Resources.resources
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP_ChatClient.UserData.resources
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.GenerateResource.cache
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.exe.licenses
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.CoreCompileInputs.cache
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.CopyComplete
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.exe
-C:\Users\slusk\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.pdb
-<<<<<<< HEAD
 C:\Users\andri\Desktop\Chat\Client\bin\Debug\ISP ChatClient.exe.config
 C:\Users\andri\Desktop\Chat\Client\bin\Debug\ISP ChatClient.exe
 C:\Users\andri\Desktop\Chat\Client\bin\Debug\ISP ChatClient.pdb
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.Licensing.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+C:\Users\andri\Desktop\Chat\Client\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
 C:\Users\andri\Desktop\Chat\Client\obj\Debug\ISP ChatClient.csproj.AssemblyReference.cache
 C:\Users\andri\Desktop\Chat\Client\obj\Debug\ISP ChatClient.csproj.SuggestedBindingRedirects.cache
 C:\Users\andri\Desktop\Chat\Client\obj\Debug\ISP_ChatClient.Properties.Resources.resources
@@ -74,18 +44,3 @@ C:\Users\andri\Desktop\Chat\Client\obj\Debug\ISP ChatClient.csproj.CoreCompileIn
 C:\Users\andri\Desktop\Chat\Client\obj\Debug\ISP ChatClient.csproj.CopyComplete
 C:\Users\andri\Desktop\Chat\Client\obj\Debug\ISP ChatClient.exe
 C:\Users\andri\Desktop\Chat\Client\obj\Debug\ISP ChatClient.pdb
-=======
-C:\Users\nina\Source\Repos\ISP-ChatClient\Client\bin\Debug\ISP ChatClient.exe.config
-C:\Users\nina\Source\Repos\ISP-ChatClient\Client\bin\Debug\ISP ChatClient.exe
-C:\Users\nina\Source\Repos\ISP-ChatClient\Client\bin\Debug\ISP ChatClient.pdb
-C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.AssemblyReference.cache
-C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.SuggestedBindingRedirects.cache
-C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP_ChatClient.Properties.Resources.resources
-C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP_ChatClient.UserData.resources
-C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.GenerateResource.cache
-C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.exe.licenses
-C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.CoreCompileInputs.cache
-C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.csproj.CopyComplete
-C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.exe
-C:\Users\nina\Source\Repos\ISP-ChatClient\Client\obj\Debug\ISP ChatClient.pdb
->>>>>>> 695c4d40b415a184bcdc75100a85bcc1af9abb0f

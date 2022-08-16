@@ -65,7 +65,7 @@ namespace ISP_ChatClient
                 Poruka();
                 try
                 {
-                    socket_klijenta.Connect("127.0.0.1", 8888);
+                    socket_klijenta.Connect("192.168.245.137", 8888);
                     stream_servera = socket_klijenta.GetStream();
                     byte[] izlazni_stream = Encoding.ASCII.GetBytes(UserTextbox.Text + "$");
                     stream_servera.Write(izlazni_stream, 0, izlazni_stream.Length);
@@ -110,6 +110,14 @@ namespace ISP_ChatClient
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 richTextBox1.SaveFile(saveFileDialog1.FileName);
+            }
+        }
+
+        private void FontButton_Click(object sender, EventArgs e)
+        {
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.Font = fontDialog1.Font;
             }
         }
     }

@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserData));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,6 +44,8 @@
             this.UserTextbox = new Bunifu.UI.WinForms.BunifuTextBox();
             this.SendButton = new Bunifu.Framework.UI.BunifuTileButton();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.FontButton = new Bunifu.Framework.UI.BunifuTileButton();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -194,26 +196,26 @@
             this.UserTextbox.Modified = false;
             this.UserTextbox.Multiline = false;
             this.UserTextbox.Name = "UserTextbox";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.UserTextbox.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.UserTextbox.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.UserTextbox.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.UserTextbox.OnIdleState = stateProperties4;
+            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.UserTextbox.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.UserTextbox.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.UserTextbox.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.Silver;
+            stateProperties12.FillColor = System.Drawing.Color.White;
+            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.UserTextbox.OnIdleState = stateProperties12;
             this.UserTextbox.Padding = new System.Windows.Forms.Padding(3);
             this.UserTextbox.PasswordChar = '\0';
             this.UserTextbox.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -257,11 +259,32 @@
             this.SendButton.Visible = false;
             this.SendButton.Click += new System.EventHandler(this.SendButton_Click);
             // 
+            // FontButton
+            // 
+            this.FontButton.BackColor = System.Drawing.Color.DodgerBlue;
+            this.FontButton.color = System.Drawing.Color.DodgerBlue;
+            this.FontButton.colorActive = System.Drawing.Color.DarkSlateGray;
+            this.FontButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FontButton.Font = new System.Drawing.Font("Microsoft YaHei", 8.2F);
+            this.FontButton.ForeColor = System.Drawing.Color.White;
+            this.FontButton.Image = ((System.Drawing.Image)(resources.GetObject("FontButton.Image")));
+            this.FontButton.ImagePosition = 14;
+            this.FontButton.ImageZoom = 50;
+            this.FontButton.LabelPosition = 27;
+            this.FontButton.LabelText = "Font";
+            this.FontButton.Location = new System.Drawing.Point(404, 380);
+            this.FontButton.Margin = new System.Windows.Forms.Padding(5);
+            this.FontButton.Name = "FontButton";
+            this.FontButton.Size = new System.Drawing.Size(85, 85);
+            this.FontButton.TabIndex = 9;
+            this.FontButton.Click += new System.EventHandler(this.FontButton_Click);
+            // 
             // UserData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(693, 479);
+            this.Controls.Add(this.FontButton);
             this.Controls.Add(this.SendButton);
             this.Controls.Add(this.UserTextbox);
             this.Controls.Add(this.ConnectButton);
@@ -270,11 +293,11 @@
             this.Controls.Add(this.TextboxLabel);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.TopPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserData";
-            this.Text = "ISP ChatClient | User Data";
+            this.Text = "ISP ChatClient";
             this.Load += new System.EventHandler(this.UserData_Load);
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();
@@ -297,6 +320,8 @@
         private Bunifu.UI.WinForms.BunifuTextBox UserTextbox;
         private Bunifu.Framework.UI.BunifuTileButton SendButton;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private Bunifu.Framework.UI.BunifuTileButton FontButton;
+        private System.Windows.Forms.FontDialog fontDialog1;
     }
 }
 
